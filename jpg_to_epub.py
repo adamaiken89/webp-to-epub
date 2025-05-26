@@ -15,7 +15,7 @@ folder_name = os.path.basename(img_dir)
 output_epub = os.path.join(os.path.expanduser('~/Downloads'), f"{folder_name}.epub")
 
 # Get all .webp files, sorted by filename
-img_files = sorted([f for f in os.listdir(img_dir) if f.lower().endswith('.webp')])
+img_files = sorted([f for f in os.listdir(img_dir) if f.lower().endswith('.jpg')])
 
 book = epub.EpubBook()
 book.set_identifier(uuid.uuid4().urn)

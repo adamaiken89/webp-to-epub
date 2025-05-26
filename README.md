@@ -2,13 +2,6 @@
 
 This project converts a folder of `.webp` images into an EPUB file using Python.
 
-- [webp\_to\_epub](#webp_to_epub)
-  - [Requirements](#requirements)
-  - [Setup](#setup)
-  - [Usage](#usage)
-  - [Notes](#notes)
-  - [Output](#output)
-
 ## Requirements
 
 - Python 3.8+
@@ -30,11 +23,10 @@ This project converts a folder of `.webp` images into an EPUB file using Python.
    source epubenv/bin/activate
    ```
 
-5. **Upgrade pip and install dependencies:**
+5. **Install dependencies:**
 
    ```sh
-   python -m pip install --upgrade pip setuptools wheel
-   pip install ebooklib pillow
+   pip install -r requirements.txt
    ```
 
 6. **(macOS only, if you see Tkinter errors):**
@@ -59,7 +51,7 @@ This project converts a folder of `.webp` images into an EPUB file using Python.
 
 3. **A folder selection dialog will appear.**
    - Select the folder containing your `.webp` images.
-   - The script will generate an EPUB file in the current directory, named after the selected folder.
+   - The script will generate an EPUB file in your Downloads folder, named after the selected folder.
 
 ## Notes
 
@@ -68,7 +60,7 @@ This project converts a folder of `.webp` images into an EPUB file using Python.
 
 ## Output
 
-- The generated EPUB file will be named `<selected_folder>.epub` and saved in the current directory.
+- The generated EPUB file will be named `<selected_folder>.epub` and saved in your Downloads folder.
 
 ---
 
